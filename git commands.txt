@@ -1,0 +1,77 @@
+git init
+git branch -m main (if the name is master)
+
+git ignore{
+test/ (folder)
+*.csv (files)
+}
+----------------------------------------
+pip install --upgrade pip
+----------------------------------------
+pyinstaller --onefile main.py
+pyinstaller --onefile balance.py
+pyinstaller --onefile main_priori.py
+
+. venv/bin/activate (linux)
+python -m venv venv
+.\venv\Scripts\activate
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+pip show nome_da_biblioteca    (mostra a versao) 
+pip install numpy==2.4.3
+pip install pandas==1.4.4
+
+
+
+------------------------------------------
+Airflow
+
+
+airflow db init
+airflow scheduler
+airflow webserver -p 8080
+
+airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password admin
+
+
+
+------------------------
+sudo service ssh start 
+
+ps aux | grep ssh
+
+ssh gui@192.168.15.115
+
+
+---------------------------
+
+docker images
+docker ps
+docker ps -a
+
+docker compose up airflow-init   (init database) 
+docker compose up -d
+
+--------------------------------
+wsl --shutdown (w+r)
+
+
+---------------------
+
+
+docker system prune -a -f && docker volume prune -a -f
+
+
+docker build . --tag airflow:production && docker compose -f production.yml up -d
+------------------------
+
+
+docker build . --tag docker-intelds:latest
+
+
+docker build . --tag docker-socket-proxy:latest
+
+docker build . --tag docker-intel-ds-conn:latest 
+
