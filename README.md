@@ -38,3 +38,12 @@ SoftCart uses Hadoop cluster as its big data platform where all the data is coll
 Spark is used to analyse the data on the Hadoop cluster.
 
 To move data between OLTP, NoSQL and the data warehouse, ETL pipelines are used and these run on Apache Airflow.
+
+
+
+
+---------------------
+pip install mysql-connector-python pandas
+
+
+chmod +x datadump.sh

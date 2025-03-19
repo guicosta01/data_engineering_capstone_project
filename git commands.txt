@@ -75,3 +75,7 @@ docker build . --tag docker-socket-proxy:latest
 
 docker build . --tag docker-intel-ds-conn:latest 
 
+-----------------
+Mysql docker
+
+mysql -u root -p
